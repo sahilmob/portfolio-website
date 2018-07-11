@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 170px;
 }
 
 .container .sidebar .content img {
