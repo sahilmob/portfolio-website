@@ -60,10 +60,49 @@ body {
 .container .main_content {
   position: relative;
   display: block;
+  flex-grow: 1;
 }
 
 .container .main_content .about {
+  color: #373D42;
   height: 100vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 200px 50px 0 50px;
+}
+
+.container .main_content .about .contact_info {
+  display: flex;
+}
+
+.container .main_content .about .contact_info div {
+  position: relative;
+  margin-right: 15px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container .main_content .about .contact_info div::after {
+  content: '.';
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: -9px;
+}
+
+.container .main_content .about .contact_info div:last-of-type::after {
+  content: none;
+}
+
+.container .main_content .about .name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.container .main_content .about .name .family_name {
+  color: #BB5D3D;
 }
 
 .container .main_content .skills {

@@ -43,8 +43,37 @@ body
     .main_content
         position: relative
         display: block
+        flex-grow: 1
         .about
+            color: #373D42
             height: 100vh
+            border-bottom: 1px solid rgba(0,0,0,0.1)
+            padding: 200px 50px 0 50px
+            .contact_info
+                display: flex
+                div
+                    position: relative
+                    margin-right: 15px
+                    text-transform: uppercase
+                    opacity: 0.6
+                    font-weight: 500
+                    font-size: 18px
+                    &::after
+                        content: '.'
+                        display: block
+                        position: absolute
+                        top: -3px
+                        right: -9px
+                    &:last-of-type
+                        &::after
+                            content: none
+            .name
+                text-transform: uppercase
+                font-weight: 700
+                font-size: 5rem
+                .family_name
+                    color: $mainColor
+                    
         .skills
             height: 100vh
             .title
