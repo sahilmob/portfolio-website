@@ -1,3 +1,4 @@
+$mainColor: #BB5D3D
 body
     margin: 0
     font-family: Roboto
@@ -6,7 +7,7 @@ body
     display: flex
     .sidebar
         padding: 50px 10px 0 10px
-        background: #BB5D3D
+        background: $mainColor
         height: 100%
         display: flex
         flex-direction: column
@@ -32,6 +33,7 @@ body
                 opacity: 0.5
                 font-size: 18px
                 cursor: pointer
+                transition: opacity 0.5s ease
                 &:hover
                     opacity: 1
             .active
@@ -52,10 +54,12 @@ body
                 i
                     color: black
                     opacity: 0.4
-                    font-size: 24px
+                    font-size: 30px
                     cursor: pointer
+                    transition: opacity 0.5s ease
                     &:hover
                         opacity: 1
+                        color: $mainColor
     .workflow
         margin-top: 60px
         .title
@@ -64,12 +68,9 @@ body
         .item
             display: flex
             align-items: center
-            margin-bottom: : 10
+            margin-bottom: 5px
+            &:nth-of-type(2)
+                margin-top: 25px
             img
                 width: 14px
                 margin-right: 10px
-
-                
-                       
-
-
