@@ -46,7 +46,7 @@ body
         margin-left: 300px
         .about
             color: #373D42
-            height: 100vh
+            height: 90vh
             padding: 200px 50px 0 30px
             border-bottom: 1px solid rgba(0,0,0,0.1)
             
@@ -107,9 +107,37 @@ body
                         font-size: 30px
                         cursor: pointer
                         
-                    
+        .experience
+            border-bottom: 1px solid rgba(0,0,0,0.1)
+            padding: 50px 50px 50px 30px
+            > .title
+                text-transform: uppercase
+                font-weight: 900
+                font-size: 36px
+            .item
+                margin-top: 50px
+                .meta
+                    display: flex
+                    .left
+                        flex-grow: 1
+                        .title
+                            text-transform: uppercase
+                            font-weight: 700
+                            font-size: 20px
+                        .entity
+                            margin-top: 5px
+                            text-transform: uppercase
+                            font-weight: 500
+                            opacity: 0.5
+                    .right
+                        color: $mainColor
+                .main
+                    margin-top: 10px
+                    line-height: 1.5rem
+                    width: 80%
+                    opacity: 0.5
         .skills
-            height: 100vh
+            height: 90vh
             border-bottom: 1px solid rgba(0,0,0,0.1)
             padding: 100px 50px 0 30px
             .title
@@ -154,3 +182,17 @@ body
                     img
                         width: 14px
                         margin-right: 10px
+        .interests
+            height: 90vh
+            border-bottom: 1px solid rgba(0,0,0,0.1)
+            padding: 100px 50px 0 30px
+            .title
+                text-transform: uppercase
+                font-weight: 900
+                font-size: 36px
+            p
+                font-weight: 400
+                line-height: 1.5rem
+                opacity: 0.6
+                &:first-of-type
+                    margin-top: 50px

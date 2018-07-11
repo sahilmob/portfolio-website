@@ -63,7 +63,7 @@ body {
 
 .container .main_content .about {
   color: #373D42;
-  height: 100vh;
+  height: 90vh;
   padding: 200px 50px 0 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -147,8 +147,55 @@ body {
   cursor: pointer;
 }
 
+.container .main_content .experience {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 50px 50px 50px 30px;
+}
+
+.container .main_content .experience > .title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.container .main_content .experience .item {
+  margin-top: 50px;
+}
+
+.container .main_content .experience .item .meta {
+  display: flex;
+}
+
+.container .main_content .experience .item .meta .left {
+  flex-grow: 1;
+}
+
+.container .main_content .experience .item .meta .left .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container .main_content .experience .item .meta .left .entity {
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.container .main_content .experience .item .meta .right {
+  color: #BB5D3D;
+}
+
+.container .main_content .experience .item .main {
+  margin-top: 10px;
+  line-height: 1.5rem;
+  width: 80%;
+  opacity: 0.5;
+}
+
 .container .main_content .skills {
-  height: 100vh;
+  height: 90vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 100px 50px 0 30px;
 }
@@ -214,5 +261,27 @@ body {
 .container .main_content .skills .workflow .item img {
   width: 14px;
   margin-right: 10px;
+}
+
+.container .main_content .interests {
+  height: 90vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 100px 50px 0 30px;
+}
+
+.container .main_content .interests .title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.container .main_content .interests p {
+  font-weight: 400;
+  line-height: 1.5rem;
+  opacity: 0.6;
+}
+
+.container .main_content .interests p:first-of-type {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
