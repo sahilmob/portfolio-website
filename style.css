@@ -36,11 +36,14 @@ body {
 }
 
 .container .sidebar .main_menu {
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-transform: uppercase;
 }
 
 .container .sidebar .main_menu li {
+  text-align: center;
   margin: 20px auto;
   color: #fff;
   font-weight: 900;
@@ -64,5 +67,26 @@ body {
 .container .skills .programming_languages {
   margin-top: 50px;
   text-transform: uppercase;
+}
+
+.container .skills .programming_languages .icons {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .skills .programming_languages .icons i {
+  width: 3em;
+  height: 3em;
+}
+
+.container .skills .programming_languages .icons i::before {
+  color: black;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
