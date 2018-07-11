@@ -59,11 +59,18 @@ body {
 .container .skills .title {
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 36px;
 }
 
 .container .skills .programming_languages {
   margin-top: 50px;
   text-transform: uppercase;
+}
+
+.container .skills .programming_languages .title {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 .container .skills .programming_languages .icons {
@@ -88,11 +95,13 @@ body {
 
 .container .workflow {
   margin-top: 60px;
+  opacity: 0.5;
 }
 
 .container .workflow .title {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .container .workflow .item {
