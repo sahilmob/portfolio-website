@@ -96,6 +96,11 @@ body {
   content: none;
 }
 
+.container .main_content .about .contact_info .email {
+  color: #BB5D3D;
+  opacity: 1;
+}
+
 .container .main_content .about .name {
   text-transform: uppercase;
   font-weight: 700;
