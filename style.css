@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+  height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .sidebar {
+  padding: 50px 10px 0 10px;
+  background: #BB5D3D;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 100vh;
+}
+
+.container .sidebar img {
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.container .sidebar .main_menu {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.container .sidebar .main_menu li {
+  margin: 20px auto;
+  color: #fff;
+  font-weight: 900;
+  opacity: 0.5;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .sidebar .main_menu .active {
+  opacity: 1;
+}
+
+.container .skills {
+  padding: 50px 20px 0 50px;
+}
+/*# sourceMappingURL=style.css.map */
