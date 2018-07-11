@@ -9,31 +9,36 @@ body {
 }
 
 .container .sidebar {
-  padding: 50px 10px 0 10px;
-  background: #BB5D3D;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 300px;
   height: 100vh;
 }
 
-.container .sidebar img {
+.container .sidebar .content {
+  position: fixed;
+  background: #BB5D3D;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .sidebar .content img {
   border-radius: 50%;
   width: 150px;
   margin-bottom: 20px;
   border: 8px solid rgba(255, 255, 255, 0.5);
 }
 
-.container .sidebar .main_menu {
+.container .sidebar .content .main_menu {
   margin: 0;
   padding: 0;
   list-style: none;
   text-transform: uppercase;
 }
 
-.container .sidebar .main_menu li {
+.container .sidebar .content .main_menu li {
   text-align: center;
   margin: 20px auto;
   color: #fff;
@@ -44,43 +49,52 @@ body {
   transition: opacity 0.5s ease;
 }
 
-.container .sidebar .main_menu li:hover {
+.container .sidebar .content .main_menu li:hover {
   opacity: 1;
 }
 
-.container .sidebar .main_menu .active {
+.container .sidebar .content .main_menu .active {
   opacity: 1;
 }
 
-.container .skills {
-  padding: 10px 20px 0 50px;
+.container .main_content {
+  position: relative;
+  display: block;
 }
 
-.container .skills .title {
+.container .main_content .about {
+  height: 100vh;
+}
+
+.container .main_content .skills {
+  height: 100vh;
+}
+
+.container .main_content .skills .title {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 36px;
 }
 
-.container .skills .programming_languages {
+.container .main_content .skills .programming_languages {
   margin-top: 50px;
   text-transform: uppercase;
 }
 
-.container .skills .programming_languages .title {
+.container .main_content .skills .programming_languages .title {
   font-size: 18px;
   font-weight: 500;
   opacity: 0.5;
 }
 
-.container .skills .programming_languages .icons {
+.container .main_content .skills .programming_languages .icons {
   margin-top: 25px;
   display: flex;
   width: 600px;
   justify-content: space-between;
 }
 
-.container .skills .programming_languages .icons i {
+.container .main_content .skills .programming_languages .icons i {
   color: black;
   opacity: 0.4;
   font-size: 30px;
@@ -88,33 +102,33 @@ body {
   transition: opacity 0.5s ease;
 }
 
-.container .skills .programming_languages .icons i:hover {
+.container .main_content .skills .programming_languages .icons i:hover {
   opacity: 1;
   color: #BB5D3D;
 }
 
-.container .workflow {
+.container .main_content .skills .workflow {
   margin-top: 60px;
   opacity: 0.5;
 }
 
-.container .workflow .title {
+.container .main_content .skills .workflow .title {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
 }
 
-.container .workflow .item {
+.container .main_content .skills .workflow .item {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
 }
 
-.container .workflow .item:nth-of-type(2) {
+.container .main_content .skills .workflow .item:nth-of-type(2) {
   margin-top: 25px;
 }
 
-.container .workflow .item img {
+.container .main_content .skills .workflow .item img {
   width: 14px;
   margin-right: 10px;
 }
