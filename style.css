@@ -32,6 +32,7 @@ body {
   border-radius: 50%;
   width: 150px;
   margin-bottom: 20px;
+  border: 8px solid rgba(255, 255, 255, 0.5);
 }
 
 .container .sidebar .main_menu {
@@ -53,6 +54,15 @@ body {
 }
 
 .container .skills {
-  padding: 50px 20px 0 50px;
+  padding: 10px 20px 0 50px;
+}
+
+.container .skills .title {
+  text-transform: uppercase;
+}
+
+.container .skills .programming_languages {
+  margin-top: 50px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
