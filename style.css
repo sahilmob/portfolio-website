@@ -2,19 +2,18 @@ body {
   margin: 0;
   font-family: Roboto;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
   display: flex;
+  position: relative;
 }
 
 .container .sidebar {
   height: 100%;
-  width: 300px;
+  min-width: 300px;
   height: 100vh;
-}
-
-.container .sidebar .content {
   position: fixed;
   background: #BB5D3D;
   width: 300px;
@@ -25,21 +24,21 @@ body {
   padding-top: 170px;
 }
 
-.container .sidebar .content img {
+.container .sidebar img {
   border-radius: 50%;
   width: 150px;
   margin-bottom: 20px;
   border: 8px solid rgba(255, 255, 255, 0.5);
 }
 
-.container .sidebar .content .main_menu {
+.container .sidebar .main_menu {
   margin: 0;
   padding: 0;
   list-style: none;
   text-transform: uppercase;
 }
 
-.container .sidebar .content .main_menu li {
+.container .sidebar .main_menu li {
   text-align: center;
   margin: 20px auto;
   color: #fff;
@@ -50,25 +49,23 @@ body {
   transition: opacity 0.5s ease;
 }
 
-.container .sidebar .content .main_menu li:hover {
+.container .sidebar .main_menu li:hover {
   opacity: 1;
 }
 
-.container .sidebar .content .main_menu .active {
+.container .sidebar .main_menu .active {
   opacity: 1;
 }
 
 .container .main_content {
-  position: relative;
-  display: block;
-  flex-grow: 1;
+  margin-left: 330px;
 }
 
 .container .main_content .about {
   color: #373D42;
   height: 100vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 200px 50px 0 50px;
+  padding: 200px 50px 0 00px;
 }
 
 .container .main_content .about .contact_info {
@@ -76,12 +73,12 @@ body {
 }
 
 .container .main_content .about .contact_info div {
-  position: relative;
   margin-right: 15px;
   text-transform: uppercase;
   opacity: 0.6;
   font-weight: 500;
   font-size: 18px;
+  position: relative;
 }
 
 .container .main_content .about .contact_info div::after {
@@ -105,10 +102,49 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 5rem;
+  position: relative;
 }
 
 .container .main_content .about .name .family_name {
   color: #BB5D3D;
+}
+
+.container .main_content .about .description {
+  margin-top: 60px;
+  line-height: 1.5rem;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.container .main_content .about .social {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.container .main_content .about .social .icon {
+  display: flex;
+  background: #373D42;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.container .main_content .about .social .icon:hover {
+  background: #BB5D3D;
+  opacity: 1;
+}
+
+.container .main_content .about .social .icon i {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .container .main_content .skills {
@@ -144,7 +180,7 @@ body {
   opacity: 0.4;
   font-size: 30px;
   cursor: pointer;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 
 .container .main_content .skills .programming_languages .icons i:hover {
