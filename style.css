@@ -194,6 +194,58 @@ body {
   opacity: 0.5;
 }
 
+.container .main_content .education {
+  height: 90vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 100px 50px 0 30px;
+}
+
+.container .main_content .education .title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.container .main_content .education .item {
+  margin-top: 50px;
+}
+
+.container .main_content .education .item .meta {
+  display: flex;
+}
+
+.container .main_content .education .item .meta .left {
+  flex-grow: 1;
+}
+
+.container .main_content .education .item .meta .left .school {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container .main_content .education .item .meta .left .degree {
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.container .main_content .education .item .meta .right {
+  color: #BB5D3D;
+}
+
+.container .main_content .education .item .main {
+  margin-top: 30px;
+}
+
+.container .main_content .education .item .main .major, .container .main_content .education .item .main .gpa {
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
 .container .main_content .skills {
   height: 90vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
