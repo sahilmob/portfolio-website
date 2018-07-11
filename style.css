@@ -58,14 +58,14 @@ body {
 }
 
 .container .main_content {
-  margin-left: 330px;
+  margin-left: 300px;
 }
 
 .container .main_content .about {
   color: #373D42;
   height: 100vh;
+  padding: 200px 50px 0 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 200px 50px 0 00px;
 }
 
 .container .main_content .about .contact_info {
@@ -149,6 +149,8 @@ body {
 
 .container .main_content .skills {
   height: 100vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 100px 50px 0 30px;
 }
 
 .container .main_content .skills .title {
